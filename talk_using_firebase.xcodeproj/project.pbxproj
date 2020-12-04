@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D0A459D2578A41E009B7D2D /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A459C2578A41E009B7D2D /* secondViewController.swift */; };
 		3DBEEE10257514E40067F86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEE0F257514E40067F86D /* AppDelegate.swift */; };
 		3DBEEE12257514E40067F86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEE11257514E40067F86D /* SceneDelegate.swift */; };
 		3DBEEE14257514E40067F86D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEE13257514E40067F86D /* ViewController.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D0A459C2578A41E009B7D2D /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		3DBEEE0C257514E40067F86D /* talk_using_firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talk_using_firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBEEE0F257514E40067F86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBEEE11257514E40067F86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				3DBEEE18257514E40067F86D /* Assets.xcassets */,
 				3DBEEE1A257514E40067F86D /* LaunchScreen.storyboard */,
 				3DBEEE1D257514E40067F86D /* Info.plist */,
-				3D0A459C2578A41E009B7D2D /* secondViewController.swift */,
 			);
 			path = talk_using_firebase;
 			sourceTree = "<group>";
@@ -261,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0A459D2578A41E009B7D2D /* secondViewController.swift in Sources */,
 				3DBEEE14257514E40067F86D /* ViewController.swift in Sources */,
 				3DBEEE10257514E40067F86D /* AppDelegate.swift in Sources */,
 				3DBEEE12257514E40067F86D /* SceneDelegate.swift in Sources */,
