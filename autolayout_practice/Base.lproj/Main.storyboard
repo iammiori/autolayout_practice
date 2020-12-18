@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vAd-HZ-Rf7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--autolayout practice-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yxJ-YF-KKE">
+                                <rect key="frame" x="181" y="433" width="52" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-KS-Xbb">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                        <state key="normal" title="스크롤뷰"/>
+                                        <connections>
+                                            <segue destination="7i9-Kh-5vU" kind="show" id="fpu-Q7-J1K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yxJ-YF-KKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clA-X5-68Q"/>
+                            <constraint firstItem="yxJ-YF-KKE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cv3-GX-SY9"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="autolayout practice" id="FO0-ig-zr0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="715.94202898550725" y="93.75"/>
+        </scene>
+        <!--스크롤뷰-->
+        <scene sceneID="ctH-XB-rfN">
+            <objects>
+                <viewController title="스크롤뷰" id="7i9-Kh-5vU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTx-ZC-r1u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6kH-48-Zax">
+                                <rect key="frame" x="154" y="418" width="106" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elo-wa-f0C">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
+                                        <state key="normal" title="스크롤뷰 (이미지)"/>
+                                        <connections>
+                                            <segue destination="bQn-8f-S0g" kind="show" id="rtH-gE-ZNT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBy-2D-kwJ">
+                                        <rect key="frame" x="0.0" y="30" width="106" height="30"/>
+                                        <state key="normal" title="스크롤뷰(컨텐츠)"/>
+                                        <connections>
+                                            <segue destination="MUq-Mh-z0n" kind="show" id="eAl-JA-DVR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="moY-hy-U6p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6kH-48-Zax" firstAttribute="centerY" secondItem="yTx-ZC-r1u" secondAttribute="centerY" id="YvU-ww-Q2B"/>
+                            <constraint firstItem="6kH-48-Zax" firstAttribute="centerX" secondItem="yTx-ZC-r1u" secondAttribute="centerX" id="mmJ-su-K1r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="스크롤뷰" id="kP4-ZF-fce"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQp-IG-u4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1475" y="-620"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HkR-NJ-z0J">
+            <objects>
+                <viewController id="MUq-Mh-z0n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NNa-NF-waY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WS7-r4-Pzo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RLf-Nc-9ua"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fho-UO-Xi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="-265"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kvn-gf-QTU">
+            <objects>
+                <viewController id="bQn-8f-S0g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="waI-uC-0L4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyw-Xb-s5h">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miori_main" translatesAutoresizingMaskIntoConstraints="NO" id="Ri2-1r-zbK">
+                                        <rect key="frame" x="0.0" y="0.0" width="928" height="960"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ri2-1r-zbK" secondAttribute="trailing" id="jkx-XE-l93"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ri2-1r-zbK" secondAttribute="bottom" id="jlN-JQ-mSh"/>
+                                    <constraint firstItem="Ri2-1r-zbK" firstAttribute="leading" secondItem="Vyw-Xb-s5h" secondAttribute="leading" id="k0T-Ww-ZvO"/>
+                                    <constraint firstItem="Ri2-1r-zbK" firstAttribute="top" secondItem="Vyw-Xb-s5h" secondAttribute="top" id="uTD-rY-Fcc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IX8-xW-315"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vyw-Xb-s5h" firstAttribute="leading" secondItem="IX8-xW-315" secondAttribute="leading" id="ZaH-1l-Ur2"/>
+                            <constraint firstItem="IX8-xW-315" firstAttribute="bottom" secondItem="Vyw-Xb-s5h" secondAttribute="bottom" id="kxM-c0-m8G"/>
+                            <constraint firstItem="IX8-xW-315" firstAttribute="trailing" secondItem="Vyw-Xb-s5h" secondAttribute="trailing" id="vsb-ec-6b2"/>
+                            <constraint firstItem="Vyw-Xb-s5h" firstAttribute="top" secondItem="IX8-xW-315" secondAttribute="top" id="ztj-B4-wU5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dXT-r9-2ey"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaM-OT-vtI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="-911"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ktn-aE-Vtw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vAd-HZ-Rf7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KWr-Hc-8iB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="97u-9n-4zO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ose-yZ-TT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.20289855072465" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miori_main" width="928" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
