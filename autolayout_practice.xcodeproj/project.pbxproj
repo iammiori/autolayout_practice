@@ -15,6 +15,9 @@
 		3D766FDF258111D000D7624D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D766FDD258111D000D7624D /* LaunchScreen.storyboard */; };
 		3D766FEA258111D000D7624D /* autolayout_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766FE9258111D000D7624D /* autolayout_practiceTests.swift */; };
 		3D766FF5258111D000D7624D /* autolayout_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766FF4258111D000D7624D /* autolayout_practiceUITests.swift */; };
+		3D9A6EF0258CCF72007D820F /* mainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6EEE258CCF72007D820F /* mainCollectionViewCell.swift */; };
+		3D9A6EF1258CCF72007D820F /* mainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6EEF258CCF72007D820F /* mainCollectionViewCell.xib */; };
+		3D9A6EF7258CD039007D820F /* AutoConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6EF6258CD039007D820F /* AutoConVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3D766FF0258111D000D7624D /* autolayout_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autolayout_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D766FF4258111D000D7624D /* autolayout_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autolayout_practiceUITests.swift; sourceTree = "<group>"; };
 		3D766FF6258111D000D7624D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9A6EEE258CCF72007D820F /* mainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D9A6EEF258CCF72007D820F /* mainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D9A6EF6258CD039007D820F /* AutoConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		3D766FD1258111CF00D7624D /* autolayout_practice */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6EF5258CD01E007D820F /* Autolayout_contents */,
+				3D9A6EEC258CCF47007D820F /* Cells */,
 				3D766FD2258111CF00D7624D /* AppDelegate.swift */,
 				3D766FD4258111CF00D7624D /* SceneDelegate.swift */,
 				3D766FD6258111CF00D7624D /* ViewController.swift */,
@@ -126,6 +134,31 @@
 				3D766FF6258111D000D7624D /* Info.plist */,
 			);
 			path = autolayout_practiceUITests;
+			sourceTree = "<group>";
+		};
+		3D9A6EEC258CCF47007D820F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6EED258CCF4E007D820F /* mainCollection */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3D9A6EED258CCF4E007D820F /* mainCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6EEE258CCF72007D820F /* mainCollectionViewCell.swift */,
+				3D9A6EEF258CCF72007D820F /* mainCollectionViewCell.xib */,
+			);
+			path = mainCollection;
+			sourceTree = "<group>";
+		};
+		3D9A6EF5258CD01E007D820F /* Autolayout_contents */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6EF6258CD039007D820F /* AutoConVC.swift */,
+			);
+			path = Autolayout_contents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +267,7 @@
 				3D766FDF258111D000D7624D /* LaunchScreen.storyboard in Resources */,
 				3D766FDC258111D000D7624D /* Assets.xcassets in Resources */,
 				3D766FDA258111CF00D7624D /* Main.storyboard in Resources */,
+				3D9A6EF1258CCF72007D820F /* mainCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6EF7258CD039007D820F /* AutoConVC.swift in Sources */,
 				3D766FD7258111CF00D7624D /* ViewController.swift in Sources */,
 				3D766FD3258111CF00D7624D /* AppDelegate.swift in Sources */,
 				3D766FD5258111CF00D7624D /* SceneDelegate.swift in Sources */,
+				3D9A6EF0258CCF72007D820F /* mainCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
