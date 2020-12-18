@@ -103,7 +103,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="buk-Ry-CdT"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mam-iz-ofg">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mam-iz-ofg">
                                                     <size key="itemSize" width="128" height="128"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -128,7 +128,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="5mb-0Q-uve"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X2a-Hh-I21">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X2a-Hh-I21">
                                                     <size key="itemSize" width="128" height="128"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -184,6 +184,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RLf-Nc-9ua"/>
+                    <connections>
+                        <outlet property="collection1" destination="4aM-Vd-NwW" id="g0L-68-deP"/>
+                        <outlet property="collection2" destination="9Xs-bv-kJh" id="suC-Gf-aVp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fho-UO-Xi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
