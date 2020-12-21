@@ -88,14 +88,14 @@
             <objects>
                 <viewController id="MUq-Mh-z0n" customClass="AutoConVC" customModule="autolayout_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NNa-NF-waY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-a2-tLN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-a2-tLN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yo8-PH-nYM" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="851"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4aM-Vd-NwW">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -115,6 +115,9 @@
                                                 <rect key="frame" x="20" y="370" width="374" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <state key="normal" title="버튼이예염"/>
+                                                <connections>
+                                                    <segue destination="3tY-DR-8Tc" kind="show" id="Duw-VZ-Wtg"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오토레이웃 테스트중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-oK-iid">
                                                 <rect key="frame" x="20" y="420" width="137" height="21"/>
@@ -142,7 +145,7 @@
                                             <constraint firstItem="lOA-V6-hZg" firstAttribute="leading" secondItem="yo8-PH-nYM" secondAttribute="leading" constant="20" id="3Co-l9-xdG"/>
                                             <constraint firstItem="4aM-Vd-NwW" firstAttribute="leading" secondItem="yo8-PH-nYM" secondAttribute="leading" id="3Iw-yV-5hO"/>
                                             <constraint firstItem="9Xs-bv-kJh" firstAttribute="top" secondItem="0EV-oK-iid" secondAttribute="bottom" constant="20" id="7ty-z3-nRf"/>
-                                            <constraint firstAttribute="height" constant="851" id="9YW-wk-15x"/>
+                                            <constraint firstAttribute="height" constant="900" id="9YW-wk-15x"/>
                                             <constraint firstItem="9Xs-bv-kJh" firstAttribute="trailing" secondItem="4aM-Vd-NwW" secondAttribute="trailing" id="Now-4h-V9M"/>
                                             <constraint firstItem="4aM-Vd-NwW" firstAttribute="top" secondItem="yo8-PH-nYM" secondAttribute="top" id="VDG-dH-EOf"/>
                                             <constraint firstItem="lOA-V6-hZg" firstAttribute="top" secondItem="4aM-Vd-NwW" secondAttribute="bottom" constant="20" id="WbG-5p-uAV"/>
@@ -164,7 +167,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-G6-WnF" userLabel="bottomView">
-                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="1100" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="asc-hZ-qbp"/>
@@ -176,6 +179,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="G8j-G6-WnF" secondAttribute="bottom" id="6B4-3n-2mF"/>
                             <constraint firstItem="f1c-a2-tLN" firstAttribute="leading" secondItem="NNa-NF-waY" secondAttribute="leading" id="G8F-nu-a6Y"/>
+                            <constraint firstItem="yo8-PH-nYM" firstAttribute="width" secondItem="WS7-r4-Pzo" secondAttribute="width" id="GHU-Db-57K"/>
                             <constraint firstItem="f1c-a2-tLN" firstAttribute="top" secondItem="NNa-NF-waY" secondAttribute="top" id="JsO-lM-EP1"/>
                             <constraint firstAttribute="bottom" secondItem="f1c-a2-tLN" secondAttribute="bottom" id="THa-uL-AsJ"/>
                             <constraint firstItem="G8j-G6-WnF" firstAttribute="leading" secondItem="WS7-r4-Pzo" secondAttribute="leading" id="a9F-jI-Cvg"/>
@@ -184,6 +188,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RLf-Nc-9ua"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="collection1" destination="4aM-Vd-NwW" id="g0L-68-deP"/>
                         <outlet property="collection2" destination="9Xs-bv-kJh" id="suC-Gf-aVp"/>
@@ -191,7 +196,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fho-UO-Xi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237.68115942029" y="-265.17857142857144"/>
+            <point key="canvasLocation" x="2229" y="-136"/>
+        </scene>
+        <!--PlaylistVC-->
+        <scene sceneID="jmp-1Q-lRU">
+            <objects>
+                <viewController id="3tY-DR-8Tc" customClass="PlaylistVC" customModule="autolayout_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FGq-gu-lRP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n9t-4F-HvW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ClL-30-vTf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE1-eg-Fg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="-325"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kvn-gf-QTU">
