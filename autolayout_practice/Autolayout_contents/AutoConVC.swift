@@ -20,6 +20,9 @@ class AutoConVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.navigationController?.navigationBar.tintColor = .black
+
+        
         //MARK: - collection view 위임
         collection1.dataSource = self
         collection1.delegate = self
